@@ -103,7 +103,7 @@ ul {
     background-color: #ff702a;
     border: none;
     padding: 0.5%;
-    width: 8%;
+    width: 10%;
 
 }
 
@@ -258,15 +258,62 @@ ul {
     text-align: center;
 }
 
+.services {
+    width: 100%;
+    height: 100vh;
+   
+}
+
+.targets-services {
+    width: 100%;
+    /* padding: 10%; */
+    /* background-color: #ffefe8; */
+    padding: 40px;
+    /* border: 1px solid #ffefe8;  */
+    border-radius: 2%;
+    /* box-shadow: 6px 6px #000000;  */
+}
+
+.targets-services img {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5%;
+}
+
+.targets-services h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #ff702a;
+}
+
+.targets-services p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.services h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.8rem;
+}
 /* Seccion cuarto */
 
 
 /* seccion 5 */
 
 .food-everyday {
-  height: 500px;
-    width: 100%;
+  height: 200px;
+    width: 80%;
     margin: 0 auto;
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
     background-color: #ffefe8;
     display: flex;
@@ -277,6 +324,7 @@ ul {
 
 .food-everyday h1 {
     font-weight: 600;
+    font-size: 35px;
     color: #000000;
     padding: 2%;
 }
