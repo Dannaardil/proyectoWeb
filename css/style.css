@@ -9,5 +9,81 @@
     padding: 0;
     list-style: none;
     scroll-behavior: smooth;
-    
+
+}
+body {
+    background-color: #1e1d2b;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+}
+
+/* ------general------- */
+
+/* Estilos del nav-bar */
+#nav-menu {
+    width: 100%;
+    margin: 0;
+    height: 50px;
+    padding: 0;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1d2b;
+    z-index: 999;
+}
+
+.menu {
+    /* margin-top: 10px; */
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#menu,
+.bx-menu {
+    display: none;
+}
+
+#nav-menu,
+ul {
+    display: flex;
+    text-align: right;
+    margin: 0;
+}
+
+#nav-menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 2.5%;
+}
+
+.items-menu {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+
+.items-menu:hover {
+    color: #ff702a;
+    position: relative;
+}
+
+.foods-nav {
+    text-decoration: none;
+    color: #ff702a;
+    font-size: 1.5rem;
+    margin-left: 2.5%;
+}
+
+.menu {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+
 }
