@@ -9,8 +9,8 @@
     padding: 0;
     list-style: none;
     scroll-behavior: smooth;
-
 }
+
 body {
     background-color: #1e1d2b;
 }
@@ -87,3 +87,197 @@ ul {
     margin-left: 0;
 
 }
+
+/* --------nav-bar--fin-------- */
+/* Primera seccion */
+.buttons {
+    color: #ffffff;
+    background-color: #ff702a;
+    border: none;
+    padding: 1%;
+   
+   
+}
+.buttons__footer{
+    color: #ffffff;
+    background-color: #ff702a;
+    border: none;
+    padding: 0.5%;
+    width: 8%;
+
+}
+
+.contenedor {
+    /* margin-top: 1%; */
+   
+    width: 100%;
+   
+    /* background-color: aqua; */
+}
+
+/* Primera seccion */
+.full-website {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    /* padding: 2%; */
+    height: 100vh;
+}
+
+.text-box {
+    text-align: left;
+    padding-left: 10%;
+}
+
+.text-box h1 {
+    font-size: 5.5rem;
+}
+
+.text-box p {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.img-home img {
+    width: 100%;
+    max-width: 500px;
+    padding-left: 6%;
+}
+
+/* segunda seccion */
+
+.about-us {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    /* gap: 1%; */
+    /* padding: 6%; */
+    height: 100vh;
+}
+
+.text-box-about {
+    text-align: left;
+    padding-left: 1;
+}
+
+.titulito {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff702a;
+    font-weight: 400;
+}
+
+.text-box-about .titulito {
+    text-align: left;
+    font-size: 1.2rem;
+    color: #ff702a;
+    font-weight: 400;
+}
+
+.text-box-about h1 {
+    font-size: 2.8rem;
+    color: #ffffff;
+}
+
+.text-box-about p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.imgabout img {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 500px;
+    padding-left: 8%;
+}
+
+/*  tercera seccion */
+
+.food-menu h1 {
+    color: #ffffff;
+    font-size: 2.8rem;
+    text-align: center;
+    /* padding: 4%; */
+   
+}
+.food-menu{
+    height: 100vh;
+}
+
+
+.targets {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    padding: 4%;
+}
+
+.target-food-menu {
+    /* padding: 10%; */
+    background-color: #ffefe8;
+    padding: 40px;
+    /* border: 1px solid #ffefe8;  */
+    border-radius: 2%;
+    box-shadow: 6px 6px #000000;
+    text-align: center;
+}
+
+.target-food-menu img {
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    /* padding: 5%; */
+}
+
+.target-food-menu h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    color: #000000;
+}
+
+.target-food-menu h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    color: #000000;
+}
+
+.target-food-menu p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Seccion cuarto */
+
+
+/* seccion 5 */
+
+.food-everyday {
+  height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffefe8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;}
+
+
+.food-everyday h1 {
+    font-weight: 600;
+    color: #000000;
+    padding: 2%;
+}
+
