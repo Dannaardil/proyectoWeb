@@ -223,7 +223,7 @@ ul {
 .target-food-menu {
     /* padding: 10%; */
     background-color: #ffefe8;
-    padding: 40px;
+    padding: 5px;
     /* border: 1px solid #ffefe8;  */
     border-radius: 2%;
     box-shadow: 6px 6px #000000;
@@ -331,5 +331,110 @@ ul {
 
 .footer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
+    height: 30vh;
+    width: 80%;
+     padding-top: 100px;
+    padding-left: 200px;
+    
     }
+.seccion__1{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+ 
+   
+
+}
+.seccion__1 h3{
+    display: flex;
+    text-decoration: underline;
+    font-weight: 800px;
+    font-size: 150%;
+    align-self: flex-start;
+    margin-left: 42%}
+.seccion__1 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+   
+   
+  
+}
+
+
+.seccion__2{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+.seccion__2 h3{
+    display: flex;
+    text-decoration: underline;
+    font-weight: 800px;
+    font-size: 150%;
+    align-self: flex-start;
+    margin-left: 27%
+
+}
+.seccion__2 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+   
+}
+.seccion__3{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+.seccion__3 h3{
+    display: flex;
+    text-decoration: underline;
+    font-weight: 800px;
+    font-size: 150%;
+    align-self: flex-start;
+    margin-left: 28%;
+    
+
+}
+.seccion__3 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+   
+}
+
+.seccion__4{
+    display: flex;
+    gap: 5px;
+    flex-direction:column;
+
+}
+
+.seccion__4 h3{
+    display: flex;
+    text-decoration: underline;
+    font-weight: 800px;
+    font-size: 150%;
+    align-self: flex-start;
+    margin-left: 32%px
+}
+.seccion__4 ul{
+    display: flex;
+   
+    align-items: start;
+}
+
+.seccion__4 i{
+    display: flex;
+   justify-content: center;
+   font-size: 23px
+
+}
+@media (width < 800px){
+   
+}
