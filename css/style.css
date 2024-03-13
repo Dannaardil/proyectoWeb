@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(variables.css);
 
 /* Estilos generales */
 * {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    color: #ff702a;
+    color: var(--color-orange);
     margin: 0;
     padding: 0;
     list-style: none;
@@ -27,7 +28,7 @@ header {
     width: 100%;
 }
 .menu{
-    color: var(--color-secundary);
+    color: var(--color-white);
     display: flex;
     width: 100%;
     list-style: none;
@@ -36,7 +37,7 @@ header {
 }
 .menu a{
     text-decoration: none;
-    color: var(--color-secundary);
+    color: var(--color-white);
 }
 .menu li{
     color: var(--color-secundary);
@@ -44,14 +45,14 @@ header {
 .menu a:hover{
     transition: 0.3s ease;
     scale: 1.2;
-    color: var(--color-primary);
+    color: var(--color-orange);
 }
 .open-menu{
     top: 20px;
     right: 20px;
     display: none;
     position: absolute;
-    background: var(--color-primary);
+    background: var(--color-orange);
     width: 30px;
     height: 30px;
     font-size: 20px;
@@ -66,7 +67,7 @@ header {
     font-size: 35px;
     height: 40px;
     border-radius: 10%;
-    color: var(--color-primary);
+    color: var(--color-orange);
 }
 #menu{
     display: none;
@@ -78,16 +79,18 @@ header {
 
 /* Estilos del nav-bar */
 #nav-menu {
-    width: 100%;
+    display:flex;
+    
+    width: 182vh;
     margin: 0;
-    height: 50px;
+    height: 90px;
     padding: 0;
     position: fixed;
     justify-content: space-between;
     align-items: center;
     background-color: #1e1d2b;
     z-index: 999;
-    box-sizing: border-box;
+
 }
 
 .menu {
@@ -97,6 +100,8 @@ header {
     display: flex;
     justify-content: right;
     align-items: center;
+    
+    gap: 4vw
 }
 
 #menu,
@@ -109,31 +114,34 @@ ul {
     display: flex;
     text-align: right;
     margin: 0;
+    
 }
 
 #nav-menu ul li {
     list-style: none;
     display: inline-block;
+    
     /* margin: 0 2.5%; */
 }
 
 .items-menu {
     color: #ffffff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1.4rem;
     position: relative;
 }
 
 .items-menu:hover {
-    color: #ff702a;
+    color: var(--color-orange);
     position: relative;
 }
 
 .foods-nav {
     text-decoration: none;
-    color: #ff702a;
-    font-size: 1.5rem;
+    color: var(--color-orange);
+    font-size: 2rem;
     margin-left: 2.5%;
+    font-weight: 100px;
 }
 
 .menu {
@@ -147,15 +155,26 @@ ul {
 /* Primera seccion */
 .buttons {
     color: #ffffff;
-    background-color: #ff702a;
+    background-color: var(--color-orange);
     border: none;
     padding: 1%;
    
+    
    
+   
+   
+}
+.button_full{
+    color: #ffffff;
+    background-color: var(--color-orange);
+    border: none;
+    padding: 1%;
+    width: 20%;
+
 }
 .buttons__footer{
     color: #ffffff;
-    background-color: #ff702a;
+    background-color: var(--color-orange);
     border: none;
     padding: 0.5%;
     width: 10%;
@@ -197,7 +216,11 @@ ul {
     color: #ffffff;
 }
 .img-home{
-    width: 100%;
+    width: 35vw;
+
+  
+   
+   
 }
 .img-home img {
     width: 100%;
@@ -218,20 +241,20 @@ ul {
 
 .text-box-about {
     text-align: left;
-    padding-left: 1;
+    /* padding-left: 1%; */
 }
 
 .titulito {
     text-align: center;
     font-size: 1.2rem;
-    color: #ff702a;
+    color: var(--color-orange);
     font-weight: 400;
 }
 
 .text-box-about .titulito {
     text-align: left;
     font-size: 1.2rem;
-    color: #ff702a;
+    color: var(--color-orange);
     font-weight: 400;
 }
 
@@ -346,7 +369,7 @@ ul {
 .targets-services h2 {
     font-size: 1.4rem;
     text-align: center;
-    color: #ff702a;
+    color: var(--color-orange);
 }
 
 .targets-services p {
@@ -514,7 +537,7 @@ ul {
         transition:  0.4s ease;
     }
     .menu li a{
-        color: var(--color-secundary);
+        color: var(--color-white);
         font-size: 30px;
     }
     .open-menu, .close-menu{
@@ -524,6 +547,7 @@ ul {
         top: 0;
     }
     #nav-menu{
+        height: 50px;
         width: 100%;
         overflow-x: hidden;
         box-sizing: border-box;
@@ -542,10 +566,68 @@ ul {
     align-items: center;
 
   }
-  .text-box{
-    display: flex;
 
+  .img-home{
+    width: 100%;
+ 
+
+   
+   
+ 
   }
+  
+  .img-home img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ margin-left: 32px
+
+   
+   
+ 
+  }
+    
+  .text-box {
+    text-align: center;
+    display: flex;
+    
+    flex-direction: column;
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.button_full{
+   display: flex;
+   justify-content: center;
+ 
+    width: 40%;
+}
+.text-box h1 {
+    padding-top: 1rem;
+    font-size: 3.5rem;
+    
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+.about-us{
+    display: flex;
+  
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+ 
+
+}
+.text-box-about{
+    width: 70%;
+    align-self: center;
+}
+.imgabout{
+    width: 80%;
+}
+
   /* /////////////////////////// */
    .footer{
     overflow-x: hidden;
