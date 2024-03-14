@@ -7,6 +7,9 @@
 text-decoration: none;
 
 }
+body{
+    background-color: var(--color-background);
+}
 
 main{
     display: grid;
@@ -15,12 +18,24 @@ main{
 .rejilla__img{
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   overflow: scroll;
-   height: 100vh;
+   overflow-y: scroll;
+   height: 60vh;
+   border-radius: 0 0 2rem 2rem;
+   gap: 20px;
+   padding :40px;
+
+
  
     }
+
+.titulo__right{
+ background-color: white;
+ border-radius: 2rem 2rem 0 0 ;
+padding: 2rem;
+}
 .todos__img{
     width: 100%;
+
     
    
 
@@ -34,7 +49,12 @@ main{
     background-color: var(--color-background);
 
 }
-
+.right{
+    padding: 40px;
+    padding-bottom: 0;
+   
+    
+}
 
 .opciones h1{
     display: flex;
@@ -58,7 +78,17 @@ main{
   
 }
 .scroll{
-    background-color: var(--color-background);
+    background-color: #fff;
+  padding: 4rem;
+    border-radius: 40px;
+
+   
+   
 
     
+}
+.img__text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
