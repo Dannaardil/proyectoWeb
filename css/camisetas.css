@@ -4,7 +4,11 @@
   padding: 0%;
   margin: 0%;
   font-family: "Rubik", sans-serif;
-  text-decoration: none;
+  
+text-decoration: none;
+
+
+
 }
 body{
     background-color: var(--color-background);
@@ -23,26 +27,40 @@ main{
    gap: 0.8rem;
    width: 100%;
    height: 87%;
+
+
+  
    padding-bottom: 0;
-}
+  
+ 
+    }
 
 .titulo__right{
     font-size: large;
-    border-radius: 2rem 2rem 0 0 ;
-    padding: 1rem;
-    padding-top:0.2rem;
-    background-color:var(--color-background--2)
+
+ border-radius: 2rem 2rem 0 0 ;
+padding: 1rem;
+padding-top:0.2rem;
+background-color:var(--color-background--2)
 }
 .todos__img{
     width: 100%;
     height: auto;
+
+    
+   
+
+    
 }
+
 
 .opciones{
     display:flex;
     flex-direction: column;
+    
     align-items: center;
     background-color: var(--color-background);
+    
 }
 .right{
     padding-bottom: 0;
@@ -51,6 +69,7 @@ main{
     display: flex;
     overflow-y: hidden;
     margin-top: 2rem;
+    
 }
 
 .opciones h1{
@@ -58,14 +77,20 @@ main{
     font-size: 40px;
     padding-top: 1em;
     padding-bottom: 1em;
+
 }
 
 .clothes{
     display: flex;
     flex-direction: column;
+   
     gap: 3.5rem;
     font-size: larger;
     margin-right: 3rem;
+    
+    
+    
+    
 }
 .opciones a{
     color: #000;
@@ -73,6 +98,9 @@ main{
 .carrito {
     display: flex;
     gap: 3rem;
+    
+    
+    
 }
 .copy{
     font-weight: 200;
@@ -85,33 +113,53 @@ main{
     padding: 1.5rem 0 1.5rem 1.5rem;
     border-radius: 40px;
     width: 100%;
+  
+    
+    
+    
+    
+    
 }
 .img__todos{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* border: solid red; */
     border-radius: 1.5rem;
     font-weight: 400;
+    
 }
 .img__text{
     display: flex;
+    /* justify-content: center; */
     flex-direction: column;
     background-color: var(--color-background);
     width: 100%;
     height: 60%;
+   
+   
+
+    
     border-radius: 1rem 1rem 1rem 1rem;
+    
+    
 }
 
 .img__text p{
     margin-left: 12px;
     display: flex;
     margin-top: 5px;
+   
+
 }
 
 .precio__boton{
     display: flex;
     gap: 3rem;
     margin-top: 0.5em
+    
+
+
 }
 .precio__boton button{
     border-radius: 0.4rem;
@@ -120,6 +168,8 @@ main{
     background-color: var(--color-rosa-fuerte);
     font-weight: bolder;
     cursor: pointer;  
+
+
 }
 .cuadrito{
     display: flex;
@@ -136,13 +186,15 @@ main{
     border-radius: 1.5rem 1.5rem  0 ;
     overflow: hidden;
     object-fit: contain }
+    
 
 .img__todos{
-    display: flex;
-    width: 200px;
+        display: flex;
+        width: 200px;
     height: 215px;
     background-color: var(--color-bone);
-    margin-left: 7px;
+   margin-left: 7px;
+    
 }
 a::after{
     content:"";
@@ -151,80 +203,17 @@ a::after{
     background-color: var(--color-rosa-fuerte);
     display:block;
     transition: all 300ms;
+
+
+
 }
 a:hover::after{
     width: 10%;
+
 }
 
 i {
     color: var(--color-rosa-fuerte);
-}
-
-/* Estilos para pantallas medianas */
-@media (max-width: 992px) {
-    main {
-        grid-template-columns: 1fr;
-    }
+   
     
-    .opciones {
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 1rem;
-    }
-    
-    .clothes {
-        flex-direction: row;
-        gap: 1rem;
-        margin-right: 0;
-    }
-    
-    .right {
-        width: 100%;
-        margin-top: 0;
-    }
-}
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
-    .rejilla__img {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .img__todos {
-        width: 150px;
-        height: 165px;
-    }
-    
-    .precio__boton {
-        gap: 1rem;
-    }
-}
-
-/* Estilos para pantallas muy pequeñas */
-@media (max-width: 480px) {
-    .rejilla__img {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .opciones {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0.5rem;
-    }
-    
-    .clothes {
-        flex-direction: column;
-        gap: 1rem;
-        margin-right: 0;
-    }
-    
-    .img__todos {
-        width: 120px;
-        height: 135px;
-    }
-    
-    .precio__boton {
-        gap: 0.5rem;
-        flex-wrap: wrap;
-    }
 }
