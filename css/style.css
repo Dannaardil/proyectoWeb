@@ -636,7 +636,7 @@ flex-direction: column;
       justify-content: center;
         padding: 0.3rem;
     }
-
+.food-everyday
 
     .text-box-about h1 {
             font-size: 3rem;
@@ -660,6 +660,11 @@ flex-direction: column;
 
         padding-left: 2rem;
         padding-bottom: 2rem;
+    }
+    .food-everyday button{
+        width: 30%;
+        padding: 0.3rem;
+
     }
     .footer{
         grid-template-columns: 1fr;
