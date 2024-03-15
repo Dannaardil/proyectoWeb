@@ -214,14 +214,15 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 40px 20px;
-    gap: 400px;
+    height: 100vh;
+    /* padding: 40px 20px; */
+    gap: 320px;
     height: 100vh;
 }
 .imgabout {
     width: 100%;
-    max-width: 500px;
-    margin-bottom: 20px;
+    max-width: 600px;
+
     order: 1;
 }
 
@@ -264,8 +265,8 @@ header {
 }
 /*  tercera seccion */
 .food-menu {
-   
-    
+
+
     height: 100vh;
 }
 
@@ -285,18 +286,26 @@ header {
     align-items: center;
     gap: 2%;
     padding: 20px 0;
-    
+
 }
 
 .target-food-menu {
     background-color: #ffefe8;
-    padding: 10px;
+    padding-top: 7em;
+    padding-bottom: 7em;
     border-radius: 2%;
     box-shadow: 6px 6px #000000;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+
+
 }
 
 .target-food-menu img {
+    display: flex;
     text-align: center;
     width: 100%;
     max-width: 250px;
@@ -397,12 +406,16 @@ header {
     width: 100%;
     padding: 40px 190px;
 
+
+
 }
+
 
 .seccion__1 {
     display: flex;
     gap: 5px;
     flex-direction: column;
+
     /* align-items: center; */
 }
 
@@ -413,12 +426,17 @@ header {
     font-size: 150%;
     align-self: flex-start;
     margin-left: 0;
+
 }
 
 .seccion__1 ul {
     display: flex;
     flex-direction: column;
     align-items: start;
+
+}
+.seccion__1 li{
+    color: #fff;
 }
 
 .seccion__2 {
@@ -426,6 +444,11 @@ header {
     gap: 5px;
     flex-direction: column;
     /* align-items: center; */
+}
+
+
+.seccion__2 li{
+    color: #fff;
 }
 
 .seccion__2 h3 {
@@ -449,6 +472,10 @@ header {
     flex-direction: column;
     /* align-items: center; */
 }
+.seccion__3 li{
+    color: #fff;
+}
+
 
 .seccion__3 h3 {
     display: flex;
@@ -470,6 +497,9 @@ flex-direction: column;
     gap: 5px;
     flex-direction: column;
     /* align-items: center; */
+}
+.seccion__4 i{
+    color: #fff;
 }
 
 .seccion__4 h3 {
@@ -520,6 +550,8 @@ flex-direction: column;
 
     .open-menu, .close-menu {
         display: block;
+        background-color: #1e1d2b;
+        
     }
 
     #menu:checked ~ .menu {
@@ -530,7 +562,7 @@ flex-direction: column;
         height: 50px;
      width: 100%;
      overflow-x: hidden;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
     }
 
     .full-website {
@@ -539,10 +571,11 @@ flex-direction: column;
         flex-direction: column;
         width: 100%;
         padding: 0;
-        padding-top: 70px; /* Ajustado el padding  */
+        padding-top: 70px; 
         margin: 0;
         align-items: center;
         height: auto;
+        gap: 2rem
     }
 
     .img-home {
@@ -561,6 +594,7 @@ flex-direction: column;
         text-align: center;
         display: flex;
     flex-direction: column;
+    gap: 30px;
         padding-left: 0;
     display: flex;
         align-items: center;
@@ -568,31 +602,65 @@ flex-direction: column;
 
     .button_full {
      display: flex;
+     
+     font-size: larger;
       justify-content: center;
-    width: 60%; /* Aumentado el ancho del botón para pantallas pequeñas */
+    width: 60%; 
     }
 
     .text-box h1 {
         padding-top: 1rem;
-    font-size: 2.5rem; /* Reducido el tamaño de fuente para pantallas pequeñas */
+    font-size: 2.5rem; 
 
     }
 
     .about-us {
-            padding: 20px; /* Reducido el padding para pantallas pequeñas */
+            padding: 20px; 
             height: auto;
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: column;
+            gap: 3rem
         }
+    .text-box-about{
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        
+      
+
+    }
+    .text-box-about button{
+        width: 30%;
+        display: flex;
+        align-self: center;
+      justify-content: center;
+        padding: 0.3rem;
+    }
 
 
     .text-box-about h1 {
-            font-size: 2rem; /* Reducido el tamaño de fuente para pantallas pequeñas */
+            font-size: 3rem;
+
+            
         }
 
     .text-box-about p {
-            font-size: 1.5rem; /* Reducido el tamaño de fuente para pantallas pequeñas */
+            font-size: 1.5rem; 
+           
+            
         }
+
+    .food-menu{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0;
+      
+
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
     .footer{
         grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -602,11 +670,12 @@ flex-direction: column;
 }
     /* &&&&&&&&&&&&&&&&*/
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .text-box-about h1 {
         font-size: 1.8rem;    }
 
     .text-box-about p {
         font-size: 1.2rem;
+
     }
-}
+} */
