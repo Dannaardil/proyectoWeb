@@ -666,6 +666,10 @@ flex-direction: column;
         padding: 0.3rem;
 
     }
+    .food-everyday h1{
+        font-size: x-large;
+
+    }
     .footer{
         grid-template-columns: 1fr;
     grid-template-rows: auto;
